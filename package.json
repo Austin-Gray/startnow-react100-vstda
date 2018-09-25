@@ -11,6 +11,7 @@
     "test": "npm run build && mocha test/.setup.js test/*.spec.js --exit"
   },
   "dependencies": {
+    "@githubprimer/octicons-react": "^8.1.0",
     "axios": "^0.16.1",
     "bluebird": "^3.5.0",
     "chai": "^3.5.0",
