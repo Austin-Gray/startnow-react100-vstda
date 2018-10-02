@@ -73,7 +73,7 @@ class ListItem extends React.Component {
                         <label>I want to...</label>
                         <textarea name='item' className='update-todo-text' onChange={this.handleChange}></textarea>
                         <label>How much of a priority is this?</label>
-                        <select className='update-todo-priority form-control form-control-sm' value={this.props.todo.item} name='priority' onChange={this.handleChange}
+                        <select className='update-todo-priority form-control form-control-sm' value={this.state.priority} name='priority' onChange={this.handleChange}
                             placeholder='Select a Priority' required>
                             <option disabled>Select a Priority</option>
                             <option value='1'>Low</option>

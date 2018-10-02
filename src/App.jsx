@@ -14,20 +14,20 @@ class App extends Component {
   }
 
   addTodo(todo) {
-    let todos = this.state.todos;
+    let todos = [...this.state.todos];
     todos.push(todo);
     this.setState({todos})
   }
 
   editTodo(todo) {
-    let todos = this.state.todos;
+    let todos = [...this.state.todos];
     let index = todos.map(function(item) { return item.id; }).indexOf(todo.id);
     todos.splice(index, 1, todo);
     this.setState({todos});
   }
 
   deleteTodo(todo) {
-    let todos = this.state.todos;
+    let todos = [...this.state.todos];
     let index = todos.map(function(todo) { return todo.id; }).indexOf(todo.id);
     todos.splice(index,1);
     this.setState({todos});
